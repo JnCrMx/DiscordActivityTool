@@ -24,7 +24,9 @@ repositories {
 }
 
 dependencies {
+    // You probably need to install this manually from https://github.com/JnCrMx/discord-game-sdk4j or from GitHub Packages
     implementation group: 'de.jcm', name: 'discord-game-sdk', version: '1.2.1-SNAPSHOT'
+
     implementation group: 'com.intellij', name: 'forms_rt', version: '6.0.5'
     implementation group: 'commons-codec', name: 'commons-codec', version: '1.14'
 
