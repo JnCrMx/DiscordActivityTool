@@ -1,5 +1,11 @@
-# Project exclude paths
+# Gradle stuff
 /.gradle/
 /build/
+
+# IDEA stuff
 /out/
 /out/production/classes/
+/.idea/
+
+# Natives
+*.dll
