@@ -55,15 +55,6 @@ public class DiscordActivityTool
 
 	public DiscordActivityTool()
 	{
-		try
-		{
-			NativeUtils.loadLibraryFromJar("/discord_game_sdk.dll");
-		}
-		catch(IOException e)
-		{
-			e.printStackTrace();
-		}
-
 		setActivityButton.addActionListener(new ActionListener()
 		{
 			@Override
