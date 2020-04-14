@@ -37,7 +37,12 @@ public class Launcher
 		{
 			if(entry.getName().equals(zipPath))
 			{
-				File temp = File.createTempFile(name, suffix);
+				File tempDir = new File(System.getProperty("java.io.tmpdir"), "java-"+name+System.nanoTime());
+				if(!tempDir.mkdir())
+					throw new IOException("Cannot create temporary directory");
+				tempDir.deleteOnExit();
+
+				File temp = new File(tempDir, name+suffix);
 				temp.deleteOnExit();
 
 				FileOutputStream fout = new FileOutputStream(temp);
